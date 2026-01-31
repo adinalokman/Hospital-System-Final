@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Patient</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 40px; background-color: #f4f6f8; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #2980b9; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; background-color: #2980b9; color: white; padding: 12px; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; margin-top: 20px; }
+        button:hover { background-color: #3498db; }
+        .cancel-btn { background-color: #95a5a6; display: block; text-align: center; text-decoration: none; padding: 10px; margin-top: 10px; color: white; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>✏️ Edit Patient Details</h2>
+    
+    <form action="/add" method="post">
+        
+        <input type="hidden" name="id" th:value="${patient.id}">
+
+        <label>Full Name:</label>
+        <input type="text" name="name" th:value="${patient.name}" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" th:value="${patient.email}" required>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phoneNumber" th:value="${patient.phoneNumber}" required>
+
+        <label>Address:</label>
+        <input type="text" name="address" th:value="${patient.address}">
+
+        <label>Blood Type:</label>
+        <select name="bloodType">
+            <option th:value="${patient.bloodType}" th:text="${patient.bloodType}" selected hidden></option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label>Medical Condition:</label>
+        <input type="text" name="medicalCondition" th:value="${patient.medicalCondition}" required>
+
+        <label>Medical History:</label>
+        <input type="text" name="medicalHistory" th:value="${patient.medicalHistory}">
+
+        <button type="submit">💾 Save Changes</button>
+        <a href="/dashboard" class="cancel-btn">Cancel</a>
+    </form>
+</div>
+
+</body>
+</html>

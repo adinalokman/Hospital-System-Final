@@ -26,7 +26,10 @@ A robust web-based application designed to streamline hospital operations, inclu
 * **Tools**: Maven, VS Code
 
 ## 📸 Screenshots
-*(Optional: You can upload screenshots of your Dashboard here later)*
+<img width="668" height="598" alt="{6941193E-C2B4-43EC-B0F0-F94C6EAA2746}" src="https://github.com/user-attachments/assets/8909a7d3-9b91-439e-ab43-3d7be0ab7b89" />
+<img width="1060" height="500" alt="{B25633E0-B433-4C11-8EEB-8F8B490C66B0}" src="https://github.com/user-attachments/assets/e33b3204-ee34-48f2-8d4a-ccd56cb2b572" />
+<img width="1028" height="577" alt="{22863B84-C650-44F6-A7CF-8908B64585CA}" src="https://github.com/user-attachments/assets/18051f67-00c6-44f1-9760-07f27bfab8a5" />
+<img width="487" height="341" alt="{99B71BBC-DD71-442D-B2A0-B6D89015A92E}" src="https://github.com/user-attachments/assets/45bb69c7-8f81-43fd-a218-4e30d6735dfb" />
 
 ## 👨‍💻 Author
 **Nur Adina Faqiha binti Lokman**
